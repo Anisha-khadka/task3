@@ -94,14 +94,23 @@ ul li.checked::before{
     background: url(image/checked.png);
     background-size: cover;
 }
-ul li span{
+ul li .close-symbol{
     position: absolute;
     right: 4px;
-   
     top: 11px;
     width: 30px;
     height: 30px;
-    color:black;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+}
+ul li .another-symbol {
+    position: absolute;
+    right: 34px;
+    top: 11px;
+    width: 30px;
+    height: 30px;
+    color: rgb(179, 52, 52);
     border-radius: 50%;
     text-align: center;
 }
