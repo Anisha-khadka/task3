@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+   
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #cfd9df, #e2ebf0);
+}
+.todoapp{
+overflow: hidden;
+    padding: 20px 20px;
+    max-width: 540px;
+    background: #fff;
+    align-items: center;
+    margin:100px 0px 0px 500px;
+    box-shadow:0px 0px 20px #afafaf;
+    border-radius: 50px;
+}
+.todoapp h2{
+    color: #002765;
+    display: flex;
+    justify-content: space-between;
+}
+.fa-solid{
+    padding-top: 5px;
+}
+
+.row{
+    display: flex;
+    margin-top: 30px;
+    outline: 1px solid black;
+    outline: inset;
+    box-shadow: 0 0 10px gray;
+  
+    border-radius: 30px;
+}
+input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+input::placeholder{
+    border: none;
+    color: #002765;
+    border-radius: 30px;
+}
+.btn1{
+    margin: 2px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: #002765;
+    color: white;
+
+}
+ul{
+    margin-top: 15px;
+}
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px ;
+    letter-spacing: 1px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+   
+}
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(image/unchecked.png);
+    background-size: cover;
+    left: 10px;
+    top: 10px;
+
+}
+ul li.checked{
+    background-color: #002765;
+    color: white;
+    border-radius: 30px;
+     margin-top: 20px;
+
+}
+ul li.checked::before{
+    background: url(image/checked.png);
+    background-size: cover;
+}
+ul li span{
+    position: absolute;
+    right: 4px;
+   
+    top: 11px;
+    width: 30px;
+    height: 30px;
+    color:black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+ul li span:hover{
+    color: white;
+    background-color: #002765;
+}
+ul li.checked span{
+    color: white;
+}
+ul li.checked span:hover{
+    background-color: white;
+    color: #002765;
+}
+
+
+
+
+
+@media only screen and (max-width: 1400px) {
+ .todoapp{
+    margin: 40px 0px 0px 30px;
+ }
+ ul li span{
+
+    margin-left: 200px;
+
+}
+  }
