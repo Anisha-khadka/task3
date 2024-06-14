@@ -93,46 +93,12 @@ ul li span {
   position: absolute;
   right: 4px;
 
-<<<<<<< HEAD
   top: 11px;
   width: 30px;
   height: 30px;
   color: black;
   border-radius: 50%;
   text-align: center;
-=======
-}
-ul li.checked{
-    background-color: #002765;
-    color: white;
-    border-radius: 30px;
-     margin-top: 20px;
-
-}
-ul li.checked::before{
-    background: url(image/checked.png);
-    background-size: cover;
-}
-ul li .close-symbol{
-    position: absolute;
-    right: 4px;
-    top: 11px;
-    width: 30px;
-    height: 30px;
-    color: black;
-    border-radius: 50%;
-    text-align: center;
-}
-ul li .another-symbol {
-    position: absolute;
-    right: 34px;
-    top: 11px;
-    width: 30px;
-    height: 30px;
-    color: rgb(179, 52, 52);
-    border-radius: 50%;
-    text-align: center;
->>>>>>> a132818f4dbf8383e9699a3d7f0832879797b8cf
 }
 
 ul li span:hover {

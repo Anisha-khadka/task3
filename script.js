@@ -27,16 +27,14 @@ function addTodo() {
 listBox.addEventListener("click", (e) => {
   if (e.target.tagName == "LI") {
     e.target.classList.toggle("checked");
-    
+
     saveData();
   } else if (e.target.tagName == "SPAN") {
-    if(e.target.parentElement.classList.contains("checked")){
+    if (e.target.parentElement.classList.contains("checked")) {
       e.target.parentElement.remove();
       saveData();
     }
-    
   }
-
 });
 
 function saveData(task) {
@@ -44,9 +42,9 @@ function saveData(task) {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 function showData() {
-  console.log(JSON.parse(localStorage.getItem("tasks")));
+  // console.log(JSON.parse(localStorage.getItem("tasks")));
   listBox.innerHTML = JSON.parse(localStorage.getItem("tasks"))
-    .map((task) => {
+    ?.map((task) => {
       return `<li>
       ${task}
       <span>\u00d7</span>
